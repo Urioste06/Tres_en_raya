@@ -54,8 +54,8 @@ def obtener_jugada(jugador, simbolo, tablero):
     print('Turno del jugador', jugador)
     while True:
         try:
-            fila = int(input('Escribe ta fila donde desea colocar {}: '.format(simbolo)))
-            columna = int(input('Escribe ta columna donde desea colocar {}: '.format(simbolo)))
+            fila = int(input('Escribe la fila donde desea colocar {}: '.format(simbolo)))
+            columna = int(input('Escribe la columna donde desea colocar {}: '.format(simbolo)))
             if fila < 0 or fila > 2 or columna < 0 or columna > 2:
                 print('Las filas y columnas deben ser números entre 0 y 2.')
             elif tablero[fila][columna] != ' ':
